@@ -54,6 +54,7 @@ module.exports = {
     }
   },
   login: async (req, res, next) => {
+    alert = { message: req.flash('error') };
     passport.authenticate('local', { failureRedirect: '/login', successRedirect: '/' })(req, res, next);
   },
   logout: async (req, res, next) => {
