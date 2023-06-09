@@ -13,6 +13,17 @@
 			<h3>todos</h3>
 			<h1>Sign up</h1>
 			<hr>
+			<form action="/signup" method="post">
+				<section>
+					<label for="username">Username</label>
+					<input type="text" id="username" name="username" autocomplete="username" required>
+				</section>
+				<section>
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" autocomplete="password" required>
+				</section>
+				<button type="submit">Sign Up</button>
+			</form>
 			<p class="help">Already have an account? <a href="/login">Sign in</a></p>
 		</section>
 		<footer class="info">
